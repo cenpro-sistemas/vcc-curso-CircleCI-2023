@@ -8,7 +8,7 @@ jobs:
       - run: echo hola
   despidete:
     docker:
-      - image: cimage/base:stable
+      - image: cimg/base:stable
     steps:
     - run echo pre adios
     - run echo pre adios
