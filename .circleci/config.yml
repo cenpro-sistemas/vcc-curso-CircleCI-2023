@@ -15,11 +15,12 @@ jobs:
       - run: echo post adios
 
 workflows:
-  hello:
+  workflow1:
     jobs:
       - saluda
       - despidete
   workflow2:
+    jobs:
       - saluda
       - despidete:
           requires:
