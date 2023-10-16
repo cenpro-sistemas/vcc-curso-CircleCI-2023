@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: cimg/base:stable
     steps:
-      - run: echo hola
+      - run: hola
   despidete:
     docker:
       - image: cimg/base:stable
@@ -19,4 +19,8 @@ workflows:
     jobs:
       - saluda
       - despidete
-
+  workflow2:
+      - saluda
+      - despidete:
+        requires:
+          - saluda
