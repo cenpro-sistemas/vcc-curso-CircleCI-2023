@@ -22,5 +22,5 @@ workflows:
   workflow2:
       - saluda
       - despidete:
-        requires:
-          - saluda
+          requires:
+            - saluda
